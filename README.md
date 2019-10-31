@@ -6,6 +6,8 @@ Install yarn (package manager)
 npm install -g yarn
 ```
 
+#### Run the sample application
+
 ```
 1. yarn
 2. yarn dev
