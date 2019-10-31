@@ -1,5 +1,5 @@
 {
-  "name": "yo-express-poc",
+  "name": "express-poc",
   "version": "1.0.0",
   "description": "My cool TypeScript app",
   "main": "index.js",
@@ -9,17 +9,17 @@
     "dev": "nodemon server/index.ts | pino-pretty",
     "dev:debug": "nodemon --exec 'node -r ts-node/register --inspect-brk' server/index.ts | pino-pretty",
     "test": "mocha test/**/*.ts --exit",
-    "test:debug": "mocha --inspect-brk test/**/*.ts --exit"
+    "test:debug": "mocha --inspect-brk test/**/*.ts --exit",
+    "deploy": "gcloud app deploy"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.1.0",
     "express": "^4.17.1",
+    "express-openapi-validator": "^2.12.1",
     "pino": "^5.13.4",
-    
-      "express-openapi-validator": "^2.12.1"
-      
+    "swagger-express-middleware": "^2.0.4"
   },
   "devDependencies": {
     "@types/chai": "^4.2.3",
@@ -37,5 +37,5 @@
     "tslint": "^5.20.0",
     "typescript": "^3.6.3"
   },
-  "author": "Carmine DiMascio <cdimascio@gmail.com> (https://github.com/cdimascio)"
+  "author": "fs"
 }
