@@ -28,3 +28,8 @@ yarn compile
 ```
 yarn deploy
 ```
+
+#### Browse to deployed application
+```
+gcloud app browse
+```
